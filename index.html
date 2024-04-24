@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase3css</title>
+    <link rel="stylesheet" href="./inde.css" />
+</head>
+<body>
+    <main class="nax.width">
+        <h1>1.7 CSS III - flexbox</h1>
+        <p>
+            Hoy toca ver flexbox, la verdadera magia de css, con este display vamos a maquetar sitios web muy rapido.
+            ya que podemos tener un muy buen control del pocisionamiento de las cajas
+             <b>En nucba amamos flex</b>
+        </p>
+        <h2>Objetivos</h2>
+        <p>
+            Conocer flex y sus propiedes, conocer que es el responsivedesing
+        </p>
+        <a href="0" class="btn">ver mas</a>
+        <h2>Recursos de la clase:</h2>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS/flex"></a>
+            </li>
+        </ul>
+        <div class="container-flex max-widht">
+            <h2>flex direction</h2>
+            <p>definimos la direccion del flex</p>
+            <div class="bg-secundary my">
+                <p>row (por defecto)</p>
+            <div class="row">
+        <div class="caja-flex"><p>1</p></div>
+        <div class="caja-flex"><p>2</p></div>
+        <div class="caja-flex"><p>3</p></div>
+        </div>
+
+         <!--reverse-->
+         <p class="my">row-reverse</p>
+
+         <div  class="row reverse">
+         <div class="caja-flex"><p>1</p></div>
+        <div class="caja-flex"><p>2</p></div>
+        <div class="caja-flex"><p>3</p></div>
+        </div>
+        
+        
+        <!--column-->
+
+        <p class="my">column</p>
+
+        <div class="column">
+          <div class="caja-flex"><p>1</p></div>
+          <div class="caja-flex"><p>2</p></div>
+          <div class="caja-flex"><p>3</p></div>
+        </div>
+
+         <!--column reverse-->
+
+         <p class="my">column-reverse</p>
+
+         <div class="column col-reverse">
+           <div class="caja-flex"><p>1</p></div>
+           <div class="caja-flex"><p>2</p></div>
+           <div class="caja-flex"><p>3</p></div>
+         </div>
+
+         <!--wrap-->
+
+         <p class="my">wrap</p>
+
+         <div class="wrap">
+           <div class="caja-flex"><p>1</p></div>
+           <div class="caja-flex"><p>2</p></div>
+           <div class="caja-flex"><p>3</p></div>
+           <div class="caja-flex"><p>4</p></div>
+           <div class="caja-flex"><p>5</p></div>
+           <div class="caja-flex"><p>6</p></div>
+           <div class="caja-flex"><p>7</p></div>
+           <div class="caja-flex"><p>8</p></div>
+           <div class="caja-flex"><p>9</p></div>
+         </div>
+
+         <!--nowrap-->
+         <div class="flex-column">
+            <p>nowrap</p>
+         <div class="no-wrap">
+            <div class="caja-flex"><p>1</p></div>
+            <div class="caja-flex"><p>2</p></div>
+            <div class="caja-flex"><p>3</p></div>
+            <div class="caja-flex"><p>4</p></div>
+            <div class="caja-flex"><p>5</p></div>
+            <div class="caja-flex"><p>6</p></div>
+            <div class="caja-flex"><p>7</p></div>
+            <div class="caja-flex"><p>8</p></div>
+            <div class="caja-flex"><p>9</p></div>
+          </div>
+
+          <!--flex start-->
+          <p class="my">flex-start</p>
+          <div class="jc-start">
+             <div class="caja-flex"><p>1</p></div>
+             <div class="caja-flex"><p>2</p></div>
+             <div class="caja-flex"><p>3</p></div>
+          </div>
+
+          <!--flex end-->
+          <p class="my">flex-end</p>
+          <div class="jc-end">
+             <div class="caja-flex"><p>1</p></div>
+             <div class="caja-flex"><p>2</p></div>
+             <div class="caja-flex"><p>3</p></div>
+          </div>
+
+          <!--flex center-->
+          <p class="my">flex-center</p>
+          <div class="jc-center">
+             <div class="caja-flex"><p>1</p></div>
+             <div class="caja-flex"><p>2</p></div>
+             <div class="caja-flex"><p>3</p></div>
+          </div>
+           <!--space between-->
+           <p class="my">space-between</p>
+           <div class="jc-between">
+              <div class="caja-flex"><p>1</p></div>
+              <div class="caja-flex"><p>2</p></div>
+              <div class="caja-flex"><p>3</p></div>
+           </div>
+
+            <!--space around-->
+          <p class="my">space-around</p>
+          <div class="jc-around">
+             <div class="caja-flex"><p>1</p></div>
+             <div class="caja-flex"><p>2</p></div>
+             <div class="caja-flex"><p>3</p></div>
+          </div>
+
+           <!--flex evenly-->
+           <p class="my">space-evenly</p>
+           <div class="jc-evenly">
+              <div class="caja-flex"><p>1</p></div>
+              <div class="caja-flex"><p>2</p></div>
+              <div class="caja-flex"><p>3</p></div>
+           </div>
+
+           <!--Align Items-->
+           <div class="align-items">
+            <h2>aling-items</h2>
+           <p>
+            Con esta propiedad alineamos los elementos en 
+            el eje cruzado. el contrario al eje principal
+           </p>
+           <div class="bg-secondary my align">
+
+            <!--flestart-->
+
+            <div class="flex-column">
+                
+            <p class="my">flex-start</p>
+            <div class="ai-start my props-align">
+              <div class="caja-flex"><p>1</p></div>
+              <div class="caja-flex"><p>2</p></div>
+              <div class="caja-flex"><p>3</p></div>
+              <div class="caja-flex"><p>4</p></div>
+            </div>
+            </div>
+
+            <!--fle-end-->
+
+            <div class="flex-column">
+                
+                <p class="my">flex-end</p>
+                <div class="ai-end my props-align">
+                  <div class="caja-flex"><p>1</p></div>
+                  <div class="caja-flex"><p>2</p></div>
+                  <div class="caja-flex"><p>3</p></div>
+                </div>
+                </div>
+
+                <!--center-->
+            <div class="flex-column">
+                <p class="my">center</p>
+                <div class="ai-center my props-align">
+                  <div class="caja-flex"><p>1</p></div>
+                  <div class="caja-flex"><p>2</p></div>
+                  <div class="caja-flex"><p>3</p></div>
+                </div>
+                </div>
+
+                <!--stretch-->
+                <div class="flex-column">
+                <p class="my">stretch</p>
+                <div class="ai-stretch my props-align">
+                  <div class="caja-flex"><p>1</p></div>
+                  <div class="caja-flex"><p>2</p></div>
+                  <div class="caja-flex"><p>3</p></div>
+                </div>
+                </div>
+
+  <div class="flex-column">
+ <p class="my">baseline</p>
+ <div class="ai-baseline my props-align">
+ <div class="caja-flex-baseline baseline-1"><p>1</p></div>
+ <div class="caja-flex-baseline baseline-2"><p>2</p></div>
+ <div class="caja-flex-baseline baseline-3"><p>3</p></div>
+ </div>
+</div>          
+<!--fle-start-->
+<div class="flex-column">
+    <p class="my">flex-start</p>
+    <div class="ac-start my props-align-content">
+    <div class="caja-flex"><p>1</p></div>
+    <div class="caja-flex"><p>2</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    </div>
+   </div>
+   
+   <!--fle-end-->
+<div class="flex-column">
+    <p class="my">flex-end</p>
+    <div class="ac-end my props-align-content">
+    <div class="caja-flex"><p>1</p></div>
+    <div class="caja-flex"><p>2</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    </div>
+   </div>
+
+   <!--fle-center-->
+<div class="flex-column">
+    <p class="my">flex-center</p>
+    <div class="ac-center my props-align-content">
+    <div class="caja-flex"><p>1</p></div>
+    <div class="caja-flex"><p>2</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    </div>
+   </div>
+
+   <!--space between-->
+<div class="flex-column">
+    <p class="my">space-between</p>
+    <div class="ac-center my props-align-content">
+    <div class="caja-flex"><p>1</p></div>
+    <div class="caja-flex"><p>2</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    <div class="caja-flex"><p>4</p></div>
+    </div>
+   </div>
+
+   <!--fle-around-->
+<div class="flex-column">
+    <p class="my">space-around</p>
+    <div class="ac-around my props-align-content">
+    <div class="caja-flex"><p>1</p></div>
+    <div class="caja-flex"><p>2</p></div>
+    <div class="caja-flex"><p>3</p></div>
+    <div class="caja-flex"><p>4</p></div>
+    </div>
+   </div>
+
+   <!--stretch-->
+<div class="flex-column">
+    <p class="my">stretch</p>
+    <div class="ac-stretch my props-align-content">
+    <div class="caja-flex"><p>1</p></div>
+    <div class="caja-flex-stretch"><p>2</p></div>
+    <div class="caja-flex-stretch"><p>3</p></div>
+    <div class="caja-flex-stretch"><p>4</p></div>
+    </div>
+   </div>
+
+   <div class="bg-secondary my">
+    <div class="ai-stretch my props-align">
+    <div class="caja-flex grow-1"><p>1</p></div>
+    <div class="caja-flex "><p>2</p></div>
+    <div class="caja-flex "><p>3</p></div>
+    <div class="caja-flex "><p>4</p></div>
+    </div>
+   </div>
+<hr class="hr"/>
+   <h2><flex-shrink</h2>
+<p>cccccccccc</p>
+   <div class="bg-secondary my">
+    <div class="shrink my props-shrik">
+    <div class="caja-flex shrink-1"><p>1</p></div>
+    <div class="caja-flex shrink-2"><p>2</p></div>
+    <div class="caja-flex shrink-3"><p>3</p></div>
+    <div class="caja-flex shrink-4"><p>4</p></div>
+    </div>
+   </div>
+
+   <div class="bg-secondary my">
+    <div class="basis my">
+    <div class="caja-flex basis-1"><p>1</p></div>
+    <div class="caja-flex basis-2"><p>2</p></div>
+    <div class="caja-flex basis-3"><p>3</p></div>
+    </div>
+   </div>
+   
+    <div class="bg-secondary my">
+        <div class="self my props-align">
+        <div class="caja-flex self-1"><p>1</p></div>
+        <div class="caja-flex self-2"><p>2</p></div>
+        <div class="caja-flex self-3"><p>3</p></div>
+        
+    </div>
+   </div>
+
+</body>
+</html>
